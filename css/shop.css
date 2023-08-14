@@ -1,0 +1,461 @@
+.shop-page {
+  background-image: url(../img/shop/shop-back.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: "Noto Serif TC", serif;
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+p {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+/**---------------- 頁首區---------------- */
+
+/* *導覽列 */
+
+header {
+  width: 100%;
+  margin: auto;
+}
+nav {
+  /* position: fixed; */
+  /* z-index: 5; */
+  /* margin: auto; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 1.2%;
+  background-image: linear-gradient(
+    to top,
+    transparent 20%,
+    rgba(39, 37, 37, 0.486)
+  );
+}
+
+/* *LOGO */
+
+.nav-logo {
+  width: 3%;
+  margin-left: 18%;
+}
+.nav-logo img {
+  width: 100%;
+}
+
+/* *選單 */
+
+.nav-menu {
+  width: 50%;
+  margin-left: 2%;
+}
+.nav-menu-list {
+  display: flex;
+  gap: 6%;
+}
+.nav-menu-list-item a {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/*  *會員購物車  */
+
+.nav-member {
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-member-login {
+  /* border: 2px solid red; */
+  margin-left: 10%;
+}
+
+.nav-member-login a {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px 20px;
+  width: 100%;
+}
+.nav-member-shop {
+  /* border: 2px solid red; */
+  width: 14%;
+  margin-right: 15%;
+}
+.nav-member-shop img {
+  width: 100%;
+}
+
+/* *頁頭標題 */
+
+.logo-font {
+  margin: auto;
+  width: 25%;
+  margin-top: 60px;
+}
+.logo-font img {
+  width: 100%;
+}
+
+/**----------------排序選擇區---------------- */
+
+.shop-choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 66%;
+  margin: auto;
+  box-sizing: border-box;
+  margin-top: 24%;
+  padding: 0px 50px;
+  /* width: 100%; */
+}
+.sh-ch-dec {
+  /* border: 2px solid red; */
+  width: 40%;
+}
+.sh-ch-dec img {
+  width: 35%;
+}
+.sh-ch-item {
+  /* border: 2px solid red; */
+  box-sizing: border-box;
+  width: 100%;
+  width: 139px;
+  text-align: center;
+}
+.sh-ch-item p {
+  box-sizing: border-box;
+  border: 2px solid #f5e201;
+  border-radius: 20px;
+  background-color: #f5e201;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  line-height: 30px;
+}
+.sh-ch-line {
+  width: 66%;
+  margin: auto;
+  margin-top: 17px;
+  height: 2px;
+  background-image: linear-gradient(to right, #6a6a6a 50%, transparent 50%);
+  background-size: 32px 2px;
+  background-repeat: repeat-x;
+}
+
+/**----------------商品區---------------- */
+
+.shop-product {
+  /* border: 2px solid red; */
+  width: 62%;
+  margin: auto;
+  margin-top: 3%;
+  box-sizing: border-box;
+}
+
+.shop-product ul {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 30px;
+}
+.shop-product li {
+  width: 31%;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.shop-product a {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-pro-pic {
+}
+
+.shop-pro-pic img {
+  width: 100%;
+}
+
+.shop-pro-txt {
+  /* border: 2px solid red; */
+  box-sizing: border-box;
+  padding: 0px 18px;
+  margin-bottom: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-pro-txt-price p {
+  color: #5b5b5b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.shop-product h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 18px;
+  margin-top: 10px;
+  letter-spacing: 1.4px;
+}
+
+.shop-pro-txt-but {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.shop-pro-txt-but-heart {
+  /* border: 2px solid red; */
+  width: 17px;
+}
+
+.shop-pro-txt-but-heart img {
+  width: 100%;
+}
+
+.shop-pro-txt-but-car {
+  /* border: 2px solid red; */
+  width: 17px;
+
+  margin: 0px 2px 0px 9px;
+}
+
+.shop-pro-txt-but-car img {
+  width: 100%;
+}
+
+/**----------------頁數區---------------- */
+
+.news-page-number {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.news-page-number span {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  /* border: 1px solid rgb(56, 56, 56); */
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 0px 8px;
+  background-color: #f5d133;
+}
+.news-page-number-li {
+  display: inline-block;
+}
+.news-page-number-li a {
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #646464;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  border: 1px solid #646464;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 0px 8px;
+  transition: 0.3s;
+}
+
+.news-page-number-li a:hover {
+  color: #ffffff;
+  background-color: #f5d133;
+  border: none;
+  transition: 0.3s;
+}
+.news-page-nb-next {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* *-----------頁尾-----------*/
+
+footer {
+  background-image: url(../img/index/footer-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+
+  margin: auto;
+  padding-top: 20%;
+  padding-bottom: 6%;
+  gap: 50px;
+}
+
+/* *頁尾左邊 */
+
+.foot-con-time {
+  /* border: 2px solid red; */
+}
+.foot-con-phone {
+  /* border: 2px solid red; */
+}
+.foot-con-tm-title {
+  margin-bottom: 12px;
+}
+.foot-con-ph-title {
+  margin-bottom: 12px;
+}
+.footer-container span {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer-container p {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+/* *頁尾logo */
+
+.foot-con-logo {
+  /* border: 2px solid red; */
+
+  width: 260px;
+  margin: 0px 30px;
+}
+
+.foot-con-logo img {
+  width: 100%;
+}
+
+/* *頁尾右邊 */
+
+.foot-con-list {
+  /* border: 2px solid red; */
+  width: 355px;
+}
+.foot-con-li-menu {
+  display: flex;
+  gap: 37px;
+}
+.foot-con-li-menu a {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.foot-con-li-sns {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 12px 0px;
+}
+.foot-con-li-sns li {
+  width: 5%;
+  min-width: 30px;
+}
+.foot-con-li-sns img {
+  width: 100%;
+}
+
+.news-page-number {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.foot-con-li-tibame p {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1280px) {
+  /**---------------- 頁首區---------------- */
+
+  /* *導覽列 */
+
+  .nav-menu-list-item a {
+    font-size: 10px;
+    margin-left: 80%;
+  }
+
+  .nav-member-login {
+    margin-left: -28%;
+  }
+  .nav-member-shop {
+    margin-right: 55%;
+  }
+
+  .shop-choose {
+    margin-top: 20%;
+  }
+  .shop-product li {
+    width: 28%;
+    margin: auto;
+  }
+
+  .shop-product ul {
+    gap: 10px;
+  }
+  .shop-product h2 {
+    font-size: 10px;
+  }
+  .shop-pro-txt-price p {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,1439 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-family: "Noto Serif TC", serif;
+  color: #000;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+p {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #333;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/**---------------- 頁首區---------------- */
+
+/* *導覽列 */
+
+header {
+  background-image: url(../img/about/header-pic.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  margin: auto;
+}
+.nav-colorback {
+ 
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+
+  padding: 0.8% 0;
+  transition: transform 0.4s ease-in-out;
+  background-color: #fffffff3;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.16);
+ 
+}
+.hideUp {
+  transform: translateY(-100%);
+}
+/* .navblack {
+  background-color: #ffffff;
+ 
+  box-shadow: 0 5px 7px #838383;
+  transition: background-color, 1s ease-in-out,box-shadow, 1s ease-in-out;
+} */
+
+.nav-con {
+  width: 87.9%;
+  /* outline: 2px solid red; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* *LOGO */
+
+.nav-logo {
+  /* outline: 2px solid red; */
+  padding-top: 0.1%;
+  width: 2.5%;
+}
+.nav-logo img {
+  width: 100%;
+}
+
+/* *選單 */
+nav {
+  width: 50%;
+  margin-left: 3%;
+  transition: transform 0.6s ease-in-out;
+  
+}
+.nav-menu-list {
+  /* outline: 2px solid red; */
+
+  padding-top: 1.7%;
+  display: flex;
+  gap: 6%;
+}
+
+.nav-menu-list-item a {
+
+  font-family: "Inter", sans-serif;
+  color: #333;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: transform 0.6s, border-bottom 0.8s;
+  border-bottom: 2px solid rgba(53, 53, 53, 0);
+  display: block;
+}
+.nav-menu-list li:hover > a {
+  transform: translateY(-5px);
+  border-bottom: 2px solid rgba(110, 110, 110, 0.527);
+}
+/*  *會員購物車  */
+
+.nav-member {
+  display: flex;
+  /* border: 2px solid red; */
+
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2%;
+}
+.nav-member-login {
+  /* border: 2px solid red; */
+  margin-left: 10%;
+}
+
+.nav-member-login a {
+  font-family: "Inter", sans-serif;
+  background-color: #4d4d4dcc;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* border: 1px solid #777777; */
+  border-radius: 8px;
+  padding: 5px 20px;
+  width: 100%;
+  transition: background-color.5s;
+}
+.nav-member-login a:hover {
+  background-color: #f8c20f;
+  /* color: #ffffff; */
+  transition: background-color.5s;
+}
+
+.nav-member-shop {
+  /* outline: 2px solid red;  */
+  width: 15%;
+  margin-right: 15%;
+}
+.nav-member-shop img {
+  width: 100%;
+}
+
+/* *漢堡 */
+
+.line {
+  /* outline: 2px solid red; */
+  width: 2%;
+  height: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  right: 8%;
+  top: 25%;
+  display: none;
+}
+.line .menu,
+.line .menu::before,
+.line .menu::after {
+  background: #555555;
+  content: "";
+  display: block;
+  height: 1.5px;
+  position: absolute;
+  transition: background ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
+  width: 22px;
+}
+.line .menu {
+  left: 2px;
+  top: 12px;
+}
+
+.line .menu::before {
+  top: -8px;
+}
+
+.line .menu::after {
+  top: 8px;
+}
+/*選單變叉叉*/
+#menu:checked + .nav-colorback .line .menu {
+  background: transparent;
+}
+
+#menu:checked + .nav-colorback .line .menu::before {
+  transform: rotate(45deg);
+}
+
+#menu:checked + .nav-colorback .line .menu::after {
+  transform: rotate(-45deg);
+}
+
+#menu:checked + .nav-colorback .line .menu::before,
+#menu:checked + .nav-colorback .line .menu::after {
+  top: 0;
+  transition: top ease 0.3s, transform ease 0.3s 0.3s;
+}
+#menu:checked ~ .nav-colorback nav {
+  transform: translateX(-100%);
+}
+input#menu {
+  display: none;
+}
+
+/* *頁頭標題 */
+
+.logo-font {
+  margin: auto;
+  width: 25%;
+  margin-top: 8%;
+  margin-bottom: 13%;
+}
+.logo-font img {
+  width: 100%;
+}
+
+/**---------------- 紙背景---------------- */
+.paperbacktop {
+  background-image: url(../img/about/paperbagtop-back.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin-top: -10%;
+  padding-top: 15.1%;
+}
+.paperback {
+  background-image: url(../img/about/paperbagrepeat-back.jpg);
+  position: relative;
+  overflow: hidden;
+  background-size: 100% auto;
+}
+
+/**---------------- 關於店區---------------- */
+
+.aboutlinda {
+  /* border: 2px solid blue; */
+  background-color: #f5f3ee;
+  width: 87.9%;
+  margin: auto;
+  border-radius: 24px 24px 0px 0px;
+  padding: 0 6%;
+  box-sizing: border-box;
+}
+
+.aboutlinda-container {
+  /* border: 2px solid blue; */
+  /* width: 100%; */
+  max-width: 1050px;
+  margin: auto;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.ablin-dec {
+  /* border: 2px solid blue; */
+
+  width: 35%;
+}
+
+.ablin-dec-flower {
+  /* border: 2px solid red; */
+  /* width: 470px; */
+}
+
+.ablin-dec-flower img {
+  width: 100%;
+  position: relative;
+  top: -14px;
+}
+.ablin-dec-mach {
+  margin-top: 35%;
+}
+
+.ablin-dec-mach img {
+  width: 100%;
+}
+
+.ablin-txt {
+  /* border: 2px solid red; */
+
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.ablin-txt h1 {
+  letter-spacing: 2px;
+}
+.ablin-txt p {
+  margin-top: 8%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 2.5em;
+}
+
+.ablin-cup {
+  /* border: 2px solid blue; */
+  width: 30%;
+}
+.ablin-cup img {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 130%;
+}
+
+/* .ablin-dec-stick {
+  border: 2px solid blue;
+  width: 0.7%;
+  margin:auto;
+  
+}
+
+.ablin-dec-stick img {
+  width: 100%;
+  
+  
+} */
+
+/**----------------店長介紹區---------------- */
+.leader {
+  /* border: 2px solid red; */
+  max-width: 1050px;
+  padding-top: 10%;
+  margin: auto;
+}
+.leader-back {
+  background: rgb(245, 226, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 226, 1, 1) 0%,
+    rgba(245, 226, 1, 0) 100%
+  );
+  border-radius: 5px;
+  width: 60%;
+  /* min-width: 600px; */
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: -14%;
+  box-sizing: border-box;
+  /* border: 2px solid blue; */
+}
+
+
+
+.leader-name p {
+  font-family: "Noto Serif TC", serif;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.leader-name {
+  background-color: #f5f3ee;
+  border-radius: 5px;
+  width: 259px;
+  height: 62px;
+  margin-top: -8px;
+  margin-left: 9.5%;
+  padding: 15px 0px 0px 45px;
+  box-sizing: border-box;
+}
+.leader-name span {
+  font-family: "Noto Serif TC", serif;
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+.leader-txt {
+  width: 85%;
+  margin-top: 4%;
+  padding-left: 25%;
+  margin-bottom: 15%;
+  /* border: 2px solid blue; */
+}
+
+.leader-txt p {
+  color: #333;
+  font-family: Noto Sans TC;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.leader-pic {
+  position: absolute;
+  left: -42%;
+  top: -6%;
+  width: 55%;
+}
+
+.leader-pic img {
+  width: 100%;
+}
+
+/**---------------- 室內介紹區---------------- */
+
+.indoor {
+  background: rgb(245, 243, 238);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 243, 238, 1) 35%,
+    rgba(237, 224, 212, 1) 35%
+  );
+  width: 87.9%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+ 
+  /* outline: 2px solid blue; */
+}
+.indoor-swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13.5%;
+  margin-bottom: 5%;
+  gap: 60px;
+  width: 100%;
+
+  /* outline: 2px solid blue; */
+}
+.ind-swi-pic {
+  width: 60%;
+  position: relative;
+
+  box-sizing: border-box;
+}
+.ind-swi-pic img {
+  width: 100%;
+}
+
+/**------ 輪播------ */
+#slide {
+  position: relative;
+  max-width: 1005px;
+  /* outline: 2px solid blue; */
+}
+#slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 3s;
+}
+#slide img:first-child {
+  position: static;
+}
+#slide img.show {
+  opacity: 1;
+  visibility: visible;
+}
+#slide .prev,
+#slide .next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* transform: translateY(-50%); */
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: rgb(253, 253, 253);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 14px 12px;
+}
+#slide .prev:hover,
+#slide .next:hover {
+  background-color: rgba(255, 188, 3, 0.432);
+}
+#slide .prev:after,
+#slide .next:after {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+}
+#slide .prev {
+  left: -14%;
+}
+
+#slide .prev:after {
+  transform: rotate(-135deg);
+  margin-left: 15px;
+  margin-top: 12px;
+}
+#slide .next {
+  right: -20%;
+}
+#slide .next:after {
+  transform: rotate(45deg);
+  margin-left: 13px;
+  margin-top: 12px;
+}
+
+/**------ 輪播------ */
+
+.ind-swi-dic-da {
+  width: 6%;
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  left: 86%;
+}
+
+.ind-swi-dic-da img {
+  width: 100%;
+}
+.ind-swi-dic-lin {
+  width: 10%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 47%;
+}
+.ind-swi-dic-lin img {
+  width: 100%;
+}
+.ind-swi-buttonprev {
+  /* border: 2px solid blue; */
+}
+
+.ind-swi-prev-circul {
+  border: 0;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  /* border: 2px solid blue; */
+}
+.ind-swi-prev-circul {
+}
+
+.arrowprev {
+  border: solid #333;
+  border-width: 0px 2px 2px 0px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+}
+.ind-swi-buttonnext {
+  /* border: 2px solid blue; */
+}
+.ind-swi-next-circul {
+  border: 0;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.arrownext {
+  border: solid #333;
+  border-width: 0px 2px 2px 0px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.indoor-table {
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 6%;
+  position: relative;
+  /* border: 2px solid blue; */
+}
+.indoor-window {
+  width: 45%;
+  /* border: 2px solid blue; */
+}
+
+.indoor-window-pic img {
+  width: 100%;
+  /* border: 2px solid blue; */
+}
+.indoor-window-text {
+  width: 30%;
+  position: absolute;
+  left: 33%;
+
+  transform: translate(-50%, -50%);
+}
+.indoor-window-text img {
+  width: 100%;
+
+  /* border: 2px solid blue; */
+}
+
+.indoor-coffee {
+  margin-top: 12%;
+  width: 45%;
+}
+
+.indoor-coffee-pic img {
+  width: 100%;
+}
+
+.indoor-coffee-text {
+  width: 30%;
+  position: absolute;
+  left: 65%;
+
+  transform: translate(-50%, -50%);
+}
+.indoor-coffee-text img {
+  width: 100%;
+}
+/* *-----------烘豆區-----------*/
+.bakedbean {
+  /* outline: 2px solid blue; */
+  background-color: #f5f3ee;
+  width: 87.9%;
+  margin: auto;
+  border-radius: 0px 0px 24px 24px;
+  box-sizing: border-box;
+  padding: 6% 6%;
+}
+.bakedbean-con {
+  /* outline: 2px solid blue; */
+  max-width: 1050px;
+  margin: auto;
+  display: flex;
+  gap: 8%;
+}
+.bakedbean-pic {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.bakedbean-pic-backe {
+  position: relative;
+  width: 78%;
+}
+.bakedbean-incup {
+  position: absolute;
+  width: 70%;
+  transform: translate(-50%, -50%);
+}
+.bakedbean-incup img {
+  width: 100%;
+}
+.bakedbean-pic-backe img {
+  width: 100%;
+}
+.bakedbean-pic-look {
+  width: 62%;
+  display: flex;
+  align-self: flex-end;
+  margin-top: 10%;
+  gap: 5%;
+}
+.bakedbean-pic-look img {
+  width: 100%;
+}
+.bakedbean-pic-look-text {
+  /* border: 2px solid red; */
+  margin-top: 24%;
+}
+.bakedbean-text {
+  /* border: 2px solid red; */
+  width: 45%;
+}
+.bakedbean-text h2 {
+  margin-bottom: 10%;
+}
+.bakedbean-text p {
+  margin-bottom: 8%;
+  line-height: 2.5rem;
+}
+/* *-----------頁尾-----------*/
+
+footer {
+  background-image: url(../img/index/footer-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1280px;
+  justify-content: center;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+
+  margin: auto;
+  padding-top: 20%;
+  padding-bottom: 4%;
+  gap: 50px;
+}
+
+/* *頁尾左邊 */
+
+.foot-con-time {
+  /* border: 2px solid red; */
+}
+.foot-con-phone {
+  /* border: 2px solid red; */
+}
+.foot-con-tm-title {
+  margin-bottom: 12px;
+}
+.foot-con-ph-title {
+  margin-bottom: 12px;
+}
+.footer-container span {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer-container p {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+/* *頁尾logo */
+
+.foot-con-logo {
+  /* border: 2px solid red; */
+
+  width: 260px;
+  margin: 0px 30px;
+}
+
+.foot-con-logo img {
+  width: 100%;
+}
+
+/* *頁尾右邊 */
+
+.foot-con-list {
+  /* border: 2px solid red; */
+  width: 355px;
+}
+.foot-con-li-menu {
+  display: flex;
+  gap: 37px;
+}
+.foot-con-li-menu a {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.foot-con-li-sns {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 12px 0px;
+}
+.foot-con-li-sns li {
+  width: 5%;
+  min-width: 30px;
+}
+.foot-con-li-sns img {
+  width: 100%;
+}
+
+.news-page-number {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.foot-con-li-tibame p {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #ffffff;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+/**---------------------------------- R W D----------------------------------------- */
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  html {
+    font-size: 10px;
+  }
+  /**---------------- 頁首區---------------- */
+  /* *hb */
+  .line {
+    display: block;
+    right: 12%;
+  }
+  /* *logo */
+  .nav-logo {
+    /* outline: 2px solid red; */
+    margin-left: 10%;
+    margin-top: 0.3%;
+    width: 40px;
+  }
+
+  .nav-logo img {
+  }
+  /* *導覽列 */
+  .nav-colorback {
+    height: 60px;
+  }
+
+  .nav-con {
+    width: 87.9%;
+    /* outline: 2px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* *會員購物車 */
+
+  .nav-member {
+    display: none;
+  }
+
+  nav {
+    /* outline: 2px solid red; */
+    background-color: #f1ecdd;
+    position: absolute;
+    width: 30%;
+    margin-left: 0%;
+    margin-top: 0%;
+    top: 100%;
+    left: 100%;
+  }
+  .nav-menu-list {
+    padding-top: 0%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+  }
+  .nav-menu-list-item {
+    border-bottom: 1px solid rgb(126, 126, 126);
+  }
+  .nav-menu-list li:last-child {
+    border-bottom: 0px solid rgb(126, 126, 126);
+  }
+  .nav-menu-list-item a {
+    color: #333;
+    font-size: 1.3rem;
+    padding: 8%;
+    font-weight: 400;
+    line-height: normal;
+    transition: none;
+    display: block;
+    letter-spacing: 2px;
+  }
+  .nav-menu-list li:hover > a {
+    transform: translateY(0px);
+    border-bottom: 0px solid rgba(110, 110, 110, 0.527);
+  }
+
+  /**----------------關於店區---------------- */
+  /* .ablin-dec {
+    
+    width: 30%;
+  } */
+
+  /**----------------店長介紹區---------------- */
+  /* .leader-back {
+    width: 50%;
+  } */
+
+  /**---------------- 頁尾區---------------- */
+
+  .footer-container {
+    padding-top: 20%;
+    gap: 50px;
+  }
+
+  /* *頁尾左邊 */
+
+  .foot-con-time {
+    display: none;
+  }
+
+  .foot-con-tm-title {
+    margin-bottom: 12px;
+  }
+  .foot-con-ph-title {
+    margin-bottom: 12px;
+  }
+  .footer-container span {
+    font-size: 1.2rem;
+
+    font-weight: 400;
+  }
+  .footer-container p {
+    font-size: 1rem;
+
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  /* *頁尾logo */
+
+  .foot-con-logo {
+    width: 200px;
+    margin: 0 5%;
+  }
+
+  /* *頁尾右邊 */
+
+  .foot-con-list {
+    /* outline: 2px solid red; */
+    width: 175px;
+  }
+  .foot-con-li-menu {
+    gap: 8%;
+  }
+  .foot-con-li-menu a {
+    display: none;
+    /* font-size: 1rem;
+    line-height: 30px; */
+  }
+
+  .foot-con-li-sns {
+    gap: 37px;
+
+    margin: 0px 0px 8px 0px;
+  }
+  .foot-con-li-sns li {
+    width: 5%;
+
+    min-width: 25px;
+  }
+  .foot-con-li-sns img {
+    width: 100%;
+  }
+
+  .news-page-number {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+
+  .foot-con-li-tibame p {
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 100;
+  }
+}
+@media screen and (max-width: 1087px) {
+
+  .hidden-br {
+    display: none;
+  }
+  /* *烘豆區 */
+  .bakedbean-con {
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 8%;
+  }
+  .bakedbean-pic {
+    
+    flex-direction: row;
+    padding-top: 3%;
+    width: 80%;
+    gap: 5%;
+  }
+  .bakedbean-pic-backe {
+    
+    width: 50%;
+  }
+  .bakedbean-pic-look {
+    width: 45%;
+    margin-top: 0;
+    gap: 5%;
+  }
+  .bakedbean-pic-look-text {
+    /* border: 2px solid red; */
+    margin-top: 24%;
+    display: flex;
+  
+  }
+  .bakedbean-text {
+    
+    width: 80%;
+    text-align: center;
+  }
+  .bakedbean-text h2 {
+    margin-bottom: 5%;
+  }
+  .bakedbean-text p {
+    margin-bottom: 4%;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+ /* *店長介紹 */
+
+  .leader-txt-hinde{
+display: none;
+  }
+
+
+ 
+  .leader-back {
+
+    width: 60%;
+    position: relative;
+    right: -14%;
+  
+  }
+  .leader-name p {
+
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .leader-name {
+    background-color: #f5f3ee;
+    border-radius: 5px;
+    width: 240px;
+    height: 62px;
+    margin-top: -12px;
+    margin-left: 12%;
+    padding: 20px 0px 0px 45px;
+    
+  }
+  .leader-name span {
+   
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 20px;
+  }
+  .leader-txt {
+    
+    width: 88%;
+
+    margin-top: 4%;
+    padding-left: 22%;
+
+    margin-bottom: 15%;
+    /* border: 2px solid blue; */
+  }
+  /* *頁尾logo */
+  .footer-container {
+    gap: 10px;
+  }
+  .foot-con-logo {
+    display: none;
+  }
+
+  .foot-con-phone {
+    width: 250px;
+    margin-top: 2%;
+  }
+  .foot-con-list {
+    margin-top: 3%;
+    width: 250px;
+  }
+
+  .foot-con-ph-title {
+    
+    margin-bottom: 3px;
+  }
+    /* *輪播 */
+
+    #slide .prev,
+    #slide .next {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      /* transform: translateY(-50%); */
+      cursor: pointer;
+      transition: 0.4s;
+      background-color: rgb(253, 253, 253);
+      border-radius: 50%;
+
+      width: 50px;
+      height: 50px;
+
+      padding: 14px 12px;
+    }
+
+#slide .prev:after,
+#slide .next:after {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+}
+
+  #slide .prev {
+    left: -16%;
+  }
+  
+  #slide .prev:after {
+    transform: rotate(-135deg);
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  #slide .next {
+    right: -29%;
+  }
+  #slide .next:after {
+    transform: rotate(45deg);
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .foot-con-phone {
+    display: none;
+  }
+  .foot-con-li-sns {
+    display: flex;
+    justify-content: center;
+  }
+  .foot-con-list {
+    width: 300px;
+  }
+  .foot-con-li-tibame {
+    text-align: center;
+  }
+ 
+}
+
+/**----------------手機 RWD---------------- */
+
+@media screen and (max-width: 414px) {
+    /* *隱藏字 */
+  .add-br414ppx{
+display: none;
+  }
+
+
+ /* *導覽列 */
+ .nav-colorback {
+  height: 55px;
+}
+/* *漢堡 */
+.line .menu {
+  left: 2px;
+  top: 15px;
+}
+
+
+
+header {
+ 
+ width: 150%;
+
+  margin-left: -25%;
+}
+
+
+/* *頁頭標題 */
+
+.logo-font {
+  margin: auto;
+  width: 25%;
+ 
+  margin-bottom: 13%;
+}
+.logo-font img {
+  width: 100%;
+   margin-top: 80px;
+}
+
+/**---------------- 紙背景---------------- */
+.paperbacktop {
+  margin-top: -17%;
+  padding-top: 15.1%;
+}
+
+
+/* *-----LOGO-----*/
+.nav-logo {
+  width: 10%;
+  margin-top: 1%;
+  margin-left: 15px;
+}
+
+/**-------- 關於店區-------- */
+.ablin-dec {
+display: none;
+}
+.ablin-cup {
+  display: none;
+}
+ .ablin-txt {
+ width: 100%;
+  margin-top: 8%;
+ 
+}
+
+.ablin-txt p {
+  margin-top: 5%;
+  
+  
+}
+  
+/**-----店長介紹區----- */
+
+.leader {
+  /* outline: 2px solid red;  */
+  max-width: 100%;
+  padding-top: 10%;
+  margin: auto;
+  padding-top: 60%;
+  
+}
+.leader-back {
+  /* outline: 2px solid red;  */
+
+  width: 80%;
+ margin-top: 50%;
+right: 0;
+ 
+}
+
+
+.leader-name p {
+  font-family: "Noto Serif TC", serif;
+  color: #000;
+  margin-left: -15px;
+  font-style: normal;
+  font-weight: 700;
+}
+.leader-name {
+
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+
+  padding: 20px 0px 0px 45px;
+  box-sizing: border-box;
+}
+.leader-name span {
+  
+ font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  
+}
+.leader-txt {
+  width: 90%;
+  margin-top: 4%;
+  padding-left: 12%;
+  margin-bottom: 15%;
+  /* border: 2px solid blue; */
+}
+
+.leader-txt p {
+ 
+ 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.leader-pic {
+  position: absolute;
+  left:0%;
+  top: -86%;
+  width: 100%;
+}
+
+.leader-pic img {
+  width: 100%;
+}
+
+
+  
+/**------ 輪播------ */
+#slide .prev,
+#slide .next {
+  width: 35px;
+  height: 35px;
+}
+
+#slide .prev:after,
+#slide .next:after {
+
+  width: 8px;
+  height: 8px;
+  
+}
+#slide .prev {
+  left: -16%;
+}
+#slide .prev:after {
+ 
+  margin-left:4px;
+  margin-top: -0.1px;
+}
+#slide .next {
+  right: -32%;
+}
+#slide .next:after {
+
+  margin-left: 1px;
+  margin-top: -0.1px;
+}
+
+.indoor {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 243, 238, 1) 19%,
+    rgba(237, 224, 212, 1) 19%
+  );
+  padding-top: 0%;
+padding-bottom: 5%;
+}
+.indoor-table {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+flex-wrap: wrap;
+
+  position: relative;
+ 
+}
+.indoor-window {
+  width: 45%;
+ 
+}
+
+
+.indoor-window-text {
+  width: 50%;
+  position: absolute;
+  left: 68%;
+  transform: translate(-50%, -50%);
+}
+.indoor-coffee-text {
+  width: 50%;
+  position: absolute;
+  left: 30%;
+
+  transform: translate(-50%, -50%);
+}
+
+.indoor-coffee {
+  width: 100%;
+  margin-left: 10%;
+  margin-top: 6%;
+}
+.indoor-window {
+  width: 88%;
+  margin-right: 10%;
+  
+}
+  /* *烘豆區 */
+  .bakedbean-con {
+    margin-bottom: 12%;
+  }
+  .bakedbean-pic-backe {
+    width: 100%;
+  }
+  .bakedbean-pic-look {
+   display: none;
+  }
+  .bakedbean-incup {
+   
+    width: 50%;
+    transform: translate(-50%, -50%);
+    left: 3%;
+  }
+  .bakedbean-pic-look-text {
+   
+    margin-top: 24%;
+    display: flex;
+  
+  }
+  .bakedbean-text {
+    
+    width: 80%;
+    text-align:start;
+  }
+  .bakedbean-text h2 {
+    margin-bottom: 5%;
+  }
+  .bakedbean-text p {
+    margin-bottom: 4%;
+    line-height: 2.5rem;
+  }
+}
+

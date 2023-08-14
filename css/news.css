@@ -1,0 +1,575 @@
+.news-page {
+  background-image: url(../img/news/news-back.jpg);
+  background-size: 100% auto;
+ 
+  background-repeat: no-repeat;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+h2 {
+  font-family: "Noto Serif TC", serif;
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+p {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+
+/**---------------- 頁首區---------------- */
+
+
+/* *導覽列 */
+
+header {
+  width: 100%;
+  margin: auto;
+}
+nav {
+  /* position: fixed; */
+  /* z-index: 5; */
+  /* margin: auto; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 1.2%;
+  background-image: linear-gradient(to top, transparent 20%, rgba(39, 37, 37, 0.486));
+}
+
+/* *LOGO */
+
+.nav-logo {
+  width: 3%;
+  margin-left: 18%;
+}
+.nav-logo img {
+  width: 100%;
+}
+
+/* *選單 */
+
+.nav-menu {
+  width: 50%;
+  margin-left: 2%;
+}
+.nav-menu-list {
+  display: flex;
+  gap: 6%;
+}
+.nav-menu-list-item a {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/*  *會員購物車  */
+
+.nav-member {
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-member-login {
+  /* border: 2px solid red; */
+  margin-left: 10%;
+}
+
+.nav-member-login a {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px 20px;
+  width: 100%;
+}
+.nav-member-shop {
+  /* border: 2px solid red; */
+  width: 14%;
+  margin-right: 15%;
+}
+.nav-member-shop img {
+  width: 100%;
+}
+
+/* *頁頭標題 */
+
+.logo-font {
+  margin: auto;
+  width: 25%;
+  margin-top: 60PX;
+}
+.logo-font img {
+  width: 100%;
+}
+
+
+/**---------------- tag區---------------- */
+
+.news-page-tag{
+   
+/* border: 2px solid red; */
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 18.3%;
+width: 100%;
+
+}
+
+.news-page-tag-light{
+width: 15%;
+min-width:200px ;
+}
+
+.news-page-tag-light img{
+mix-blend-mode: darken;
+width: 100%;
+}
+
+.news-page-tag-item{
+margin-top: 10px;
+margin-bottom: 30px;
+
+   
+/* border: 2px solid red; */
+}
+
+.news-page-tag-item ul{
+ display: flex;
+ gap: 13px;
+ 
+}
+.news-page-tag-item a{  
+    background-color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-style: normal;
+    box-sizing: border-box;
+    padding:  5px 13px ;
+    line-height: 22px;
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    
+}
+.news-page-tag-item a:hover{
+    background-color: #FFEC43;
+    transition: 0.5s;
+}
+
+
+.news-page-tag-txt{
+    
+width: 28%;
+}
+.news-page-tag-txt img{
+width: 100%;
+}
+
+
+/**---------------- 文章區---------------- */
+
+
+.news-page-post{
+margin-top: 3%;
+width: 100%;
+overflow: hidden;
+}
+.news-page-post-con{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:70px;
+    width: 100%;
+    
+}
+
+
+.news-page-post-con a{
+    /* border: 2px solid red; */
+    background-image: url(../img/news/blog-back.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    box-sizing: border-box;
+    padding: 30px 100px;
+    gap:50px;
+    width: 55%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    position: relative;
+    
+}
+.news-page-post-con:nth-child(1):before{
+    position: absolute;
+    z-index: 0;
+    content: "";
+    margin-top: 12%;
+    margin-left: -52%;
+    background-image: url(../img/news/dec-bigcircle.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    width: 25%;
+    height: 25%;
+}
+.news-page-post-con a:hover{
+   opacity: 0.7;
+   transition: all 0.5s ease;
+
+}
+
+
+.news-page-post-con-pic{
+    /* border: 2px solid red; */
+    width: 100%;
+    min-width: 200px;
+    margin-left: 5px;
+}
+.news-page-post-con img{
+width: 100%;
+border-radius: 20px;
+}
+
+
+.news-page-post-con-article{
+/* border: 2px solid red; */
+margin-top: 10px;
+width: 160%;
+min-width: 55px;
+
+}
+
+.news-page-post-con-article h2{
+    font-family: "Noto Serif TC", serif;
+    color: #000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+.news-page-post-con-art-tagdate{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: -20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.news-page-post-con-art-tagdate p{
+    font-family: "Noto Sans TC", sans-serif;
+    color: #333;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.news-page-post-con-art-tag p{
+    border: 1px solid #919191;
+    border-radius: 8px;
+    font-style: normal;
+    box-sizing: border-box;
+    padding:  2px 12px ;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    
+}
+
+.news-page-post-con-art-txt p{
+    font-family: "Noto Sans TC", sans-serif;
+    color: #333;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+
+/**---------------- 頁數區---------------- */
+
+.news-page-number{
+   
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    
+}
+.news-page-number span{
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+   font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    /* border: 1px solid rgb(56, 56, 56); */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 0px 8px;
+    background-color: #f5d133;
+}
+.news-page-number-li {
+    display: inline-block;
+}
+.news-page-number-li a{
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #646464;
+    font-size: 16px;
+   font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    border: 1px solid  #646464 ;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 0px 8px;
+    transition: 0.3s ;
+}
+
+.news-page-number-li a:hover{
+    color: #ffffff;
+    background-color: #f5d133;
+    border:none;
+    transition: 0.3s ;
+}
+.news-page-nb-next {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+
+
+/* *-----------頁尾-----------*/
+
+footer{
+    background-image: url(../img/index/footer-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 100%;
+   
+  }
+  
+  
+  .footer-container{
+    display: flex;
+    justify-content: center;
+   box-sizing: border-box;
+    /* border: 2px solid red; */
+  
+  margin: auto;
+  padding-top: 20%;
+  padding-bottom: 6%;
+  gap:50px;
+  
+  }
+  
+  /* *頁尾左邊 */
+  
+  .foot-con-time{
+    /* border: 2px solid red; */
+  }
+  .foot-con-phone{
+    /* border: 2px solid red; */
+    
+  }
+  .foot-con-tm-title{
+    margin-bottom: 12px;
+    
+  }
+  .foot-con-ph-title{
+    margin-bottom: 12px;
+  }
+  .footer-container span{
+    font-family: "Noto Sans TC", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    
+  }
+  .footer-container p{
+    
+    font-family: "Noto Sans TC", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  
+  /* *頁尾logo */
+  
+  
+  .foot-con-logo{
+    /* border: 2px solid red; */
+   
+    
+    width: 260px;
+    margin: 0px 30px;
+  }
+  
+  .foot-con-logo img{
+    width: 100%;
+  }
+  
+  
+  
+  /* *頁尾右邊 */
+  
+  
+  .foot-con-list{
+  /* border: 2px solid red; */
+  width: 355px;
+  }
+  .foot-con-li-menu{
+  display: flex;
+  gap:37px
+  }
+  .foot-con-li-menu a{
+    font-family: "Noto Sans TC", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  
+  .foot-con-li-sns{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 12px 0px;
+  }
+  .foot-con-li-sns li{
+    width: 5%;
+    min-width: 30px;
+  }
+  .foot-con-li-sns img{
+    width: 100%;
+  }
+
+
+  .news-page-number{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+
+  .foot-con-li-tibame p{
+    font-family: "Noto Sans TC", sans-serif;
+    color: #ffffff;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+
+
+
+
+
+
+
+
+@media (max-width: 1280px) {
+
+
+
+    /**---------------- 頁首區---------------- */
+
+
+    /* *導覽列 */
+
+    .nav-menu-list-item a {
+        font-size: 10px;
+        margin-left: 80%;
+      }
+    
+      .nav-member-login {
+        margin-left: -28%;
+      }
+      .nav-member-shop {
+        margin-right: 55%;
+      }
+
+
+
+    /**---------------- 文章區---------------- */
+
+
+    .news-page-tag-light{
+        margin-top: -21.5px;
+    }
+    .news-page-post-con{
+        gap:20px;
+    }
+    .news-page-post-con a{
+      width: 60%;
+      height: 50%;
+    }
+  
+    .news-page-post-con-art-tagdate{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .news-page-post-con-article h2{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.5px;
+    }
+
+    .news-page-post-con-art-tagdate p{
+        font-size: 5px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    
+    .news-page-post-con-art-tag p{
+        font-size: 5px;
+        border-radius: 8px;
+        padding:  2px 12px ;
+        line-height: 15px;
+        letter-spacing: 1.5px;
+        
+    }
+    
+    .news-page-post-con-art-txt p{
+        font-size: 5px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    
+
+
+}
