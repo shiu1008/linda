@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 h1,
 h2 {
   font-family: "Noto Serif TC", serif;
@@ -25,7 +26,7 @@ p {
 /* *導覽列 */
 
 header {
-  background-image: url(../img/about/header-pic.jpg);
+  background-image: url(../img/about/bake-test\ .jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 100%;
@@ -34,6 +35,13 @@ header {
   overflow: hidden;
   margin: auto;
 }
+/* 當螢幕寬度小於600px時 */
+@media (max-width: 414px) {
+  .responsive-image {
+    background-image: url('small-image.jpg');
+  }
+}
+
 .nav-colorback {
  
   position: fixed;
@@ -214,6 +222,7 @@ input#menu {
 /* *頁頭標題 */
 
 .logo-font {
+  
   margin: auto;
   width: 25%;
   margin-top: 8%;
@@ -221,6 +230,7 @@ input#menu {
 }
 .logo-font img {
   width: 100%;
+  
 }
 
 /**---------------- 紙背景---------------- */
@@ -1195,12 +1205,7 @@ display: none;
 
 
 
-header {
- 
- width: 150%;
 
-  margin-left: -25%;
-}
 
 
 /* *頁頭標題 */
@@ -1213,12 +1218,12 @@ header {
 }
 .logo-font img {
   width: 100%;
-   margin-top: 80px;
+   margin-top: 75%;
 }
 
 /**---------------- 紙背景---------------- */
 .paperbacktop {
-  margin-top: -17%;
+  margin-top: -12%;
   padding-top: 15.1%;
 }
 
