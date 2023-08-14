@@ -6,7 +6,7 @@
     <link href="img/favicon.ico" rel="shortcut icon" />
     <title>Linda Linda Cafe</title>
     <link rel="stylesheet" href="../css/reset.css" />
-   
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
@@ -29,18 +30,18 @@
     <div class="home">
       <!-- *-------頁首區-------->
 
-      <header>
-        <nav>
+      <input type="checkbox" id="menu" />
+      <div id="navcolorback" class="nav-colorback">
+        <div class="nav-con">
           <div class="nav-logo">
             <a href="index.html">
-              <img src="../img/index/header-logo.png" alt="" />
+              <img src="../img/index/header-logo2.png" alt="" />
             </a>
           </div>
-
-          <div class="nav-menu">
+          <nav>
             <ul class="nav-menu-list">
               <li class="nav-menu-list-item">
-                <a href="about.html">ABOUT</a>
+                <a class="navtext" href="about.html">ABOUT</a>
               </li>
               <li class="nav-menu-list-item">
                 <a href="">MENU</a>
@@ -55,7 +56,7 @@
                 <a href="">CONTACT</a>
               </li>
             </ul>
-          </div>
+          </nav>
 
           <div class="nav-member">
             <div class="nav-member-login">
@@ -63,14 +64,22 @@
             </div>
             <div class="nav-member-shop">
               <a href="">
-                <img src="../img/index/header-cart.png" alt="" />
+                <img src="../img/index/header-cart2.png" alt="" />
               </a>
             </div>
           </div>
-        </nav>
 
+          <label for="menu" class="line">
+            <div class="menu"></div>
+          </label>
+        </div>
+      </div>
+      <header>
         <div class="logo-font">
           <img src="../img/index/lindalinda.png" alt="" />
+        </div>
+        <div class="header_man">
+          <img src="../img/index/header_man.png" alt="" />
         </div>
       </header>
       <!-- *-------紙背景-------->
@@ -86,8 +95,12 @@
 
               <article class="ft-cn-coffee">
                 <div class="ft-cf-cn-pic">
-                  <div class="ft-cf-cn-pic-man"><img src="../img/index/coffeeman.png" alt="" /></div>
-                  <div class="ft-cf-cn-pic-bean"><img src="../img/index/coffeebean.png" alt=""></div>
+                  <div class="ft-cf-cn-pic-man">
+                    <img src="../img/index/coffeeman.png" alt="" />
+                  </div>
+                  <div class="ft-cf-cn-pic-bean">
+                    <img src="../img/index/coffeebean.png" alt="" />
+                  </div>
                 </div>
                 <div class="ft-cf-cn-txt">
                   <h2>台灣喝不到的咖啡</h2>
@@ -96,9 +109,11 @@
                     跟日本本店一樣的售價，而不是日本到台灣的優質產品都得價格翻倍。<br />
                     我們從日本最南端的沖繩開始，前往大阪、京都、神奈川、東京拜訪各家名
                     店與各名店主理人交流，為了能在台灣也能喝到日本風味的咖啡。<br />
-                    最後2013世界烘豆冠軍、2016日本烘豆冠軍、2017日本烘豆冠軍、日本6間
-                    亞洲最佳咖啡廳的多達12間的日本各地知名職人咖啡品牌，都放心的將品牌
-                    與產品交到我們手中，希望大家能一起來體驗看看日本道地的咖啡！
+                    <span class="hidenfeatext"
+                      >最後2013世界烘豆冠軍、2016日本烘豆冠軍、2017日本烘豆冠軍、日本6間
+                      亞洲最佳咖啡廳的多達12間的日本各地知名職人咖啡品牌，都放心的將品牌
+                      與產品交到我們手中，希望大家能一起來體驗看看日本道地的咖啡！</span
+                    >
                   </p>
                 </div>
               </article>
@@ -109,20 +124,24 @@
                 <div class="ft-cu-cn-txt">
                   <h2>獨特風味的咖啡咖哩</h2>
                   <p>
-                    日式咖哩絕對是大家從小到大必吃的美食， 那誘發食慾的香氣及稠潤的
+                    日式咖哩絕對是大家從小到大必吃的美食，誘發食慾的香氣及稠潤的
                     口感不分男女老少都無法抗拒！<br />
                     Linda Linda以日本流行吃法為靈感，將蘋果、蜂蜜、紅白蘿蔔與多種辛香料
                     熬製咖哩醬，牢牢鎖住食材風味
                     後加入特製調味及鮮嫩肉品創作出兩種口味「啡啡牛」「可可雞」。
-                    「啡啡牛」加入能增添焦香及微酸苦味的咖啡粉與極品軟嫩的牛肋條
-                    「可可雞」添加能增強香料味與濃郁度的可可粉和多汁不乾柴的雞腿丁
-                    完美組合風味與口感層次，讓入嘴的每一口比例都恰到好處。
+                    <span class="hidenfeatext"
+                      >「啡啡牛」加入能增添焦香及微酸苦味的咖啡粉與極品軟嫩的牛肋條
+                      「可可雞」添加能增強香料味與濃郁度的可可粉和多汁不乾柴的雞腿丁
+                      完美組合風味與口感層次，讓入嘴的每一口比例都恰到好處。</span
+                    >
                   </p>
                 </div>
                 <div class="ft-cu-cn-pic">
                   <div class="ft-cu-cn-pic-curry"><img src="../img/index/curry.png" alt="" /></div>
-                  <div class="ft-cu-cn-pic-otona"><img src="../img/index/curry-otona.png" alt=""></div>
-                  <div class="ft-cu-cn-pic-sun"><img src="../img/index/sun.png" alt=""></div>
+                  <div class="ft-cu-cn-pic-otona">
+                    <img src="../img/index/curry-otona.png" alt="" />
+                  </div>
+                  <div class="ft-cu-cn-pic-sun"><img src="../img/index/sun.png" alt="" /></div>
                 </div>
               </article>
             </section>
@@ -130,24 +149,69 @@
 
           <!-- *-----------遊戲區 ----------->
 
-          <div class="middle-whiteback"></div>
+          <!-- <div class="middle-whiteback"></div> -->
           <div class="game">
-            <div class="game-item">
+            <div class="game-item" data-aos="zoom-in">
               <div class="ga-it-title">
                 <img src="../img/index/whatdrink.png" alt="" />
               </div>
 
-              <div class="ga-it-button">
+              <!-- <div class="ga-it-button">
                 <img src="../img/index/start.png" alt="" />
-              </div>
+              </div> -->
 
-              <div class="ga-it-coffee">
-                <figure><img src="../img/index/Cappu.png" alt="" /></figure>
-                <figure><img src="../img/index/latte.png" alt="" /></figure>
-                <figure><img src="../img/index/Cappu.png" alt="" /></figure>
-                <figure><img src="../img/index/maccha.png" alt="" /></figure>
-                <figure><img src="../img/index/latte.png" alt="" /></figure>
-              </div>
+              <ul class="ga-it-coffee">
+                <li>
+                  <a href="">
+                    <div>
+                      <img src="../img/index/Cappu.png" alt="" />
+                    </div>
+                    <div>
+                      <img src="../img/index/capuname.png" alt="" />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      <img src="../img/index/latte.png" alt="" />
+                    </div>
+                    <div>
+                      <img src="../img/index/lettename.png" alt="" />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      <img src="../img/index/Cappu.png" alt="" />
+                    </div>
+                    <div>
+                      <img src="../img/index/capuname.png" alt="" />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      <img src="../img/index/maccha.png" alt="" />
+                    </div>
+                    <div>
+                      <img src="../img/index/mocaname.png" alt="" />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      <img src="../img/index/latte.png" alt="" />
+                    </div>
+                    <div>
+                      <img src="../img/index/lettename.png" alt="" />
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -273,11 +337,7 @@
                   </li>
                 </ul>
                 <ul class="foot-con-li-tibame">
-                  <p>
-                    本網站為緯育TibaMe前端工程師班第85期學員專題作品
-                    <br />
-                    平台僅供學習、展示之用。
-                  </p>
+                  <p>本網站為緯育TibaMe前端工程師班第85期學員專題作品平台僅供學習、展示之用。</p>
                 </ul>
               </div>
             </div>
@@ -285,5 +345,9 @@
         </div>
       </div>
     </div>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
