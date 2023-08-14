@@ -858,7 +858,7 @@ footer {
     /* outline: 2px solid red; */
     background-color: #f1ecdd;
     position: absolute;
-    width: 100%;
+    width: 30%;
     margin-left: 0%;
     margin-top: 0%;
     top: 100%;
@@ -871,7 +871,7 @@ footer {
     gap: 6%;
   }
   .nav-menu-list-item {
-    border-bottom: 1px solid rgb(126, 126, 126);
+    border-bottom: 1.5px solid rgba(126, 126, 126, 0.555);
     box-sizing: border-box;
   }
   .nav-menu-list-item:hover {
@@ -884,7 +884,7 @@ footer {
   .nav-menu-list-item a {
     color: #333;
     font-size: 1.3rem;
-    padding: 5%;
+    padding: 5% 0 5% 8%;
     font-weight: 400;
     line-height: normal;
     transition: none;
@@ -1167,6 +1167,10 @@ footer {
     left: 2px;
     top: 15px;
   }
+ 
+  nav {
+    width: 100%;
+  }
 
   /* *頁頭標題 */
 
@@ -1214,8 +1218,7 @@ footer {
 
   .leader {
     /* outline: 2px solid blue; */
-    width: ;
-  }
+  
   .leader-back {
     right: 1%;
     width: 80%;
