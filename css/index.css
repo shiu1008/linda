@@ -442,7 +442,7 @@ input#menu {
 .new-card {
   /* border: 2px solid red; */
   /* width: 100%; */
-  width: 1200px;
+  max-width: 1300px;
   margin: auto;
   margin-top: 4%;
 }
@@ -984,7 +984,6 @@ footer {
     display: none;
   }
   .new-card ul li a {
-  
   }
   .news-title {
     width: 30%;
@@ -995,7 +994,7 @@ footer {
     margin-left: 1%;
   }
   .new-card ul li {
-    padding-top:5% ;
+    padding-top: 5%;
     width: 70%;
   }
 }
