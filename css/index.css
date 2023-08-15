@@ -984,8 +984,7 @@ footer {
     display: none;
   }
   .new-card ul li a {
-    padding-top: 10%;
-    padding-bottom: 0px;
+  
   }
   .news-title {
     width: 30%;
@@ -996,6 +995,7 @@ footer {
     margin-left: 1%;
   }
   .new-card ul li {
+    padding-top:5% ;
     width: 70%;
   }
 }
