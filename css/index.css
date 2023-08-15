@@ -522,17 +522,24 @@ input#menu {
   /* outline: 2px solid red; */
   display: flex;
   justify-content: space-between;
-  display: flex;
   align-items: center;
 
   gap: 100px;
 }
+.new-car-txt-tag {
+  width: 60px;
+}
+.new-car-txt p:nth-child(2) {
+  color: #616161;
+}
 .new-car-txt-tag p {
-  border: 1px solid #979797;
-  border-radius: 8px;
+  color: #4d3f12c9;
+  border: 1px solid #4d3f12c9;
+  border-radius: 10px;
   font-style: normal;
   box-sizing: border-box;
-  padding: 0px 10px;
+  text-align: center;
+  /* padding: 0px 10px; */
   line-height: 22px;
   /* margin-top: 5px; */
   font-size: 10px;
@@ -546,7 +553,6 @@ input#menu {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  min-width: 150px;
 }
 
 /* *-----------頁尾-----------*/
@@ -975,13 +981,13 @@ footer {
   /* *-----------最新消息-----------*/
 
   .new-card ul li:nth-child(4) {
-    display: none;
+    /* display: none; */
   }
   .new-card ul li:nth-child(5) {
-    display: none;
+    /* display: none; */
   }
   .new-card ul li:nth-child(6) {
-    display: none;
+    /* display: none; */
   }
   .new-card ul li a {
   }
@@ -995,6 +1001,29 @@ footer {
   }
   .new-card ul li {
     padding-top: 5%;
-    width: 70%;
+    width: 40%;
+  }
+  /* *卡片 */
+  .new-card ul li a {
+    width: 100%;
+    height: 202px;
+  }
+  .new-car-txt {
+    width: 80%;
+    gap: 10px;
+  }
+  .new-card ul li h3 {
+    font-size: 1rem;
+    min-width: 0px;
+  }
+  .new-car-txt-tag {
+    width: 50%;
+    text-align: center;
+    padding: 0px;
+  }
+  .new-car-txt-tag p {
+    width: 80%;
+    line-height: 18px;
+    font-size: 10px;
   }
 }
