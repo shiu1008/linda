@@ -319,7 +319,7 @@ input#menu {
   margin-top: 16%;
 }
 .ft-cu-cn-pic {
-  width: 55%;
+  width: 50%;
   position: relative;
 }
 .ft-cu-cn-pic-curry img {
@@ -329,8 +329,8 @@ input#menu {
   position: absolute;
   z-index: 2;
   transform: translate(-50%, -50%);
-  right: -0.5%;
-  bottom: 63%;
+  right: -8%;
+  bottom: 60%;
 }
 .ft-cu-cn-pic-sun {
   position: absolute;
@@ -344,8 +344,8 @@ input#menu {
 }
 .ft-cu-cn-txt {
   /* outline: 2px solid red; */
-  width: 42%;
-  margin-right: 3%;
+  width: 45%;
+  margin-right: 5%;
 }
 
 .ft-cu-cn-txt h2 {
@@ -373,7 +373,7 @@ input#menu {
   padding-bottom: 20%;
 } */
 .game {
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin-top: 5%;
 }
 .game-item {
@@ -490,20 +490,24 @@ input#menu {
 
 /* *卡片 */
 .new-card ul li {
-  opacity: 1;
   transition: all 0.5s ease;
+  margin-bottom: 5%;
 }
 .new-card ul li:hover {
+  transform: rotate(5deg);
+}
+/* .new-card ul li:hover {
   opacity: 0.7;
   transition: all 0.5s ease;
-}
+} */
 .new-card ul li a {
   box-sizing: border-box;
   /* padding-top: 320px; */
   /* border: 2px solid blue; */
   width: 279px;
-  padding-bottom: 95px;
-  height: 470px;
+  margin-bottom: 15%;
+  /* padding-bottom: ; */
+  height: 360px;
   /* width: 100%; */
   display: flex;
   flex-direction: column;
@@ -515,9 +519,12 @@ input#menu {
 .new-car-txt {
   box-sizing: border-box;
   /* width: 100%; */
-  /* border: 2px solid red; */
+  /* outline: 2px solid red; */
   display: flex;
   justify-content: space-between;
+  display: flex;
+  align-items: center;
+
   gap: 100px;
 }
 .new-car-txt-tag p {
@@ -527,12 +534,12 @@ input#menu {
   box-sizing: border-box;
   padding: 0px 10px;
   line-height: 22px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   font-size: 10px;
   letter-spacing: 2px;
 }
 .new-card ul li h3 {
-  /* border: 2px solid red; */
+  /* outline: 2px solid red; */
   font-family: "Noto Serif TC", serif;
   color: #000;
   font-size: 18px;
@@ -898,6 +905,9 @@ footer {
     margin-top: -10%;
   }
   /**---------- 特色區---------- */
+  .feature {
+    padding-bottom: 10%;
+  }
 
   .ft-center {
     margin-top: 8%;
@@ -919,6 +929,7 @@ footer {
   /**  咖哩 */
   .ft-cn-curry {
     margin-top: 12%;
+    margin-left: 6%;
   }
   .ft-cu-cn-pic {
     width: 85%;
@@ -960,5 +971,31 @@ footer {
     margin: auto;
     width: 120%;
     margin-left: 2%;
+  }
+  /* *-----------最新消息-----------*/
+
+  .new-card ul li:nth-child(4) {
+    display: none;
+  }
+  .new-card ul li:nth-child(5) {
+    display: none;
+  }
+  .new-card ul li:nth-child(6) {
+    display: none;
+  }
+  .new-card ul li a {
+    padding-top: 10%;
+    padding-bottom: 0px;
+  }
+  .news-title {
+    width: 30%;
+    margin: auto;
+  }
+  .new-card {
+    width: 100%;
+    margin-left: 1%;
+  }
+  .new-card ul li {
+    width: 70%;
   }
 }
