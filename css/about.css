@@ -424,7 +424,7 @@ input#menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 13.5%;
+  margin-top: 8%;
   margin-bottom: 5%;
   gap: 60px;
   width: 100%;
@@ -1264,6 +1264,16 @@ footer {
   }
 
   /**------ 輪播------ */
+  .ind-swi-pic {
+    width: 100%;
+  }
+  #slide {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    /* outline: 2px solid blue; */
+  }
+
   #slide .prev,
   #slide .next {
     width: 35px;
@@ -1276,14 +1286,14 @@ footer {
     height: 8px;
   }
   #slide .prev {
-    left: -16%;
+    left: -1%;
   }
   #slide .prev:after {
     margin-left: 4px;
     margin-top: -0.1px;
   }
   #slide .next {
-    right: -32%;
+    right: -13%;
   }
   #slide .next:after {
     margin-left: 1px;
