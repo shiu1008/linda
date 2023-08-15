@@ -1266,7 +1266,6 @@ footer {
   /**------ 輪播------ */
   .ind-swi-pic {
     width: 100%;
- 
   }
   #slide {
     position: relative;
@@ -1343,8 +1342,8 @@ footer {
     margin-right: 10%;
   }
   .indoor-swiper {
-   
     margin-top: 8%;
+  }
   /* *烘豆區 */
   .bakedbean-con {
     margin-bottom: 12%;
