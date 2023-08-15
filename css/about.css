@@ -424,7 +424,7 @@ input#menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8%;
+  margin-top: 13.5%;
   margin-bottom: 5%;
   gap: 60px;
   width: 100%;
@@ -1266,6 +1266,7 @@ footer {
   /**------ 輪播------ */
   .ind-swi-pic {
     width: 100%;
+ 
   }
   #slide {
     position: relative;
@@ -1341,6 +1342,9 @@ footer {
     width: 88%;
     margin-right: 10%;
   }
+  .indoor-swiper {
+   
+    margin-top: 8%;
   /* *烘豆區 */
   .bakedbean-con {
     margin-bottom: 12%;
