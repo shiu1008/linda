@@ -29,7 +29,7 @@ header {
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 40%;
+  padding-bottom: 10%;
   position: sticky;
 
   top: 0;
@@ -234,7 +234,7 @@ input#menu {
   position: relative;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   padding-top: 15.1%;
 }
 .paperback {
